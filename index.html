@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Order</title>
+</head>
+<body>
+    <main class="wrapper">
+        <section class="components">
+            <div class="container">
+                <div class="order">
+                    <h1 class="order__title">
+                        Your Order
+                    </h1>
+                    <p class="order__data">
+                        Payment Data
+                    </p>
+                    <p class="order__price">
+                        $199.00
+                    </p>
+                    <form class="order__form">
+                        <div class="order__row">
+                            <label for="" class="order__label order__label-one">
+                                Choose payment method:
+                            </label>
+                            <div class="order__box-radio">
+                                <label class="order__border">
+                                    <input type="radio" class="order__radio" name="one">
+                                    <span class="order__pay-method">
+                                        Credit Card
+                                    </span>
+                                </label>
+                                <label class="order__border">
+                                    <input type="radio" class="order__radio" name="one">
+                                    <span class="order__pay-method">
+                                        PayPal
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="order__wrap">
+                            <div class="order__col order__col-one">
+                                <label for="" class="order__label">
+                                    Card Number:
+                                </label>
+                                <input type="number" class="order__card" maxlength="16" placeholder="0000  0000  0000  0000">
+                            </div>
+                            <div class="order__box">
+                                <div class="order__col order__col-two">
+                                    <label for="" class="order__label">
+                                        Name on Card:
+                                    </label>
+                                    <input type="text" class="order__card" placeholder="John Smith">
+                                </div>
+                                <div class="order__col order__col-three">
+                                    <label for="" class="order__label">
+                                        Expiry Date:
+                                    </label>
+                                        <input type="number" class="order__date" placeholder="Option">
+                                </div>
+                                <div class="order__col">
+                                    <label for="" class="order__label">
+                                        CVV:
+                                    </label>
+                                    <input type="number" class="order__card" placeholder="000" maxlength="3">
+                                </div>
+                            </div>
+                        </div>
+                        <label class="order__checkbox-row">
+                            <input type="checkbox" class="order__checkbox">
+                            <span class="order__checkbox-text">
+                                Save card on file
+                            </span>
+                        </label>
+                        <div class="order__button-row">
+                            <button type="submit" class="btn"> Submit Order </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
