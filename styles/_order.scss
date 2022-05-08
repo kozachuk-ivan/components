@@ -24,6 +24,7 @@
     }
 
     &__label {
+        display: block;
         font-weight: 500;
         margin-bottom: 7px;
 
@@ -93,6 +94,8 @@
 
     &__col { 
 
+        width: 100%;
+
         &-one {
             margin-bottom: 15px;
         }
@@ -104,6 +107,14 @@
         &-three {
             margin-right: 13px;
         }
+    }
+
+    &__date {
+        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='12' height='6' viewBox='0 0 12 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.29295 5.70686L0.853647 1.26757C0.538648 0.952568 0.761747 0.413969 1.20715 0.413969L10.7929 0.413969C11.2384 0.413969 11.4615 0.952568 11.1465 1.26757L6.70715 5.70686C6.31665 6.09739 5.68345 6.09739 5.29295 5.70686Z' fill='%232C2C2C'/%3E%3C/svg%3E");
+        background-size: 11px 6px;
+        background-repeat: no-repeat;
+        background-position: calc(100% - 14px) 15px;
+        padding-right: 35px;
     }
 
     &__wrap {
@@ -143,7 +154,7 @@
                 height: 16px;
                 border: 1px solid #E0E0E0;
                 border-radius: 4px;
-                top: -2px;
+                top: -1px;
                 left: 0px;
                 background-position: 50% 50%;
                 background-repeat: no-repeat;
